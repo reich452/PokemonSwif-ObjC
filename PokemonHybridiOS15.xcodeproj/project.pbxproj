@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		012224801F8D274E00E5DC3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122247F1F8D274E00E5DC3A /* AppDelegate.m */; };
-		012224831F8D274E00E5DC3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012224821F8D274E00E5DC3A /* ViewController.m */; };
 		012224861F8D274E00E5DC3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012224841F8D274E00E5DC3A /* Main.storyboard */; };
 		012224881F8D274E00E5DC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012224871F8D274E00E5DC3A /* Assets.xcassets */; };
 		0122248B1F8D274E00E5DC3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012224891F8D274E00E5DC3A /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		0122247B1F8D274E00E5DC3A /* PokemonHybridiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonHybridiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0122247E1F8D274E00E5DC3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0122247F1F8D274E00E5DC3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		012224811F8D274E00E5DC3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		012224821F8D274E00E5DC3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		012224851F8D274E00E5DC3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		012224871F8D274E00E5DC3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0122248A1F8D274E00E5DC3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,17 +55,47 @@
 		0122247D1F8D274E00E5DC3A /* PokemonHybridiOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				012224971F8D2BF300E5DC3A /* UI */,
+				012224961F8D2BE600E5DC3A /* View Controller */,
+				012224951F8D2BDA00E5DC3A /* Model Controller */,
+				012224941F8D2BCE00E5DC3A /* Model */,
 				0122247E1F8D274E00E5DC3A /* AppDelegate.h */,
 				0122247F1F8D274E00E5DC3A /* AppDelegate.m */,
-				012224811F8D274E00E5DC3A /* ViewController.h */,
-				012224821F8D274E00E5DC3A /* ViewController.m */,
-				012224841F8D274E00E5DC3A /* Main.storyboard */,
 				012224871F8D274E00E5DC3A /* Assets.xcassets */,
 				012224891F8D274E00E5DC3A /* LaunchScreen.storyboard */,
 				0122248C1F8D274E00E5DC3A /* Info.plist */,
 				0122248D1F8D274E00E5DC3A /* main.m */,
 			);
 			path = PokemonHybridiOS15;
+			sourceTree = "<group>";
+		};
+		012224941F8D2BCE00E5DC3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		012224951F8D2BDA00E5DC3A /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		012224961F8D2BE600E5DC3A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		012224971F8D2BF300E5DC3A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				012224841F8D274E00E5DC3A /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +169,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012224831F8D274E00E5DC3A /* ViewController.m in Sources */,
 				0122248E1F8D274E00E5DC3A /* main.m in Sources */,
 				012224801F8D274E00E5DC3A /* AppDelegate.m in Sources */,
 			);

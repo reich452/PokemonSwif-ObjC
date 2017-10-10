@@ -12,6 +12,10 @@
 		012224881F8D274E00E5DC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012224871F8D274E00E5DC3A /* Assets.xcassets */; };
 		0122248B1F8D274E00E5DC3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012224891F8D274E00E5DC3A /* LaunchScreen.storyboard */; };
 		0122248E1F8D274E00E5DC3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122248D1F8D274E00E5DC3A /* main.m */; };
+		0122249A1F8D2DE300E5DC3A /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 012224991F8D2DE300E5DC3A /* Pokemon.m */; };
+		0122249D1F8D3D1300E5DC3A /* PokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122249C1F8D3D1300E5DC3A /* PokemonController.m */; };
+		012224A01F8D3D4500E5DC3A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0122249F1F8D3D4500E5DC3A /* NetworkController.swift */; };
+		012224A21F8D47C400E5DC3A /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012224A11F8D47C400E5DC3A /* PokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,13 @@
 		0122248A1F8D274E00E5DC3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0122248C1F8D274E00E5DC3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0122248D1F8D274E00E5DC3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		012224981F8D2DE300E5DC3A /* Pokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
+		012224991F8D2DE300E5DC3A /* Pokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pokemon.m; sourceTree = "<group>"; };
+		0122249B1F8D3D1300E5DC3A /* PokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonController.h; sourceTree = "<group>"; };
+		0122249C1F8D3D1300E5DC3A /* PokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonController.m; sourceTree = "<group>"; };
+		0122249E1F8D3D4400E5DC3A /* PokemonHybridiOS15-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokemonHybridiOS15-Bridging-Header.h"; sourceTree = "<group>"; };
+		0122249F1F8D3D4500E5DC3A /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		012224A11F8D47C400E5DC3A /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,8 @@
 		012224941F8D2BCE00E5DC3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				012224981F8D2DE300E5DC3A /* Pokemon.h */,
+				012224991F8D2DE300E5DC3A /* Pokemon.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +92,10 @@
 		012224951F8D2BDA00E5DC3A /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0122249B1F8D3D1300E5DC3A /* PokemonController.h */,
+				0122249C1F8D3D1300E5DC3A /* PokemonController.m */,
+				0122249F1F8D3D4500E5DC3A /* NetworkController.swift */,
+				0122249E1F8D3D4400E5DC3A /* PokemonHybridiOS15-Bridging-Header.h */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -86,6 +103,7 @@
 		012224961F8D2BE600E5DC3A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				012224A11F8D47C400E5DC3A /* PokemonViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -129,6 +147,7 @@
 				TargetAttributes = {
 					0122247A1F8D274E00E5DC3A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012224A01F8D3D4500E5DC3A /* NetworkController.swift in Sources */,
+				0122249A1F8D2DE300E5DC3A /* Pokemon.m in Sources */,
+				012224A21F8D47C400E5DC3A /* PokemonViewController.swift in Sources */,
 				0122248E1F8D274E00E5DC3A /* main.m in Sources */,
 				012224801F8D274E00E5DC3A /* AppDelegate.m in Sources */,
+				0122249D1F8D3D1300E5DC3A /* PokemonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +327,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PokemonHybridiOS15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.PokemonHybridiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonHybridiOS15/Model Controller/PokemonHybridiOS15-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,11 +344,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PokemonHybridiOS15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.PokemonHybridiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonHybridiOS15/Model Controller/PokemonHybridiOS15-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
